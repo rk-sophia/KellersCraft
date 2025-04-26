@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/estilos_produtos.css" rel="stylesheet">
+
+    <title> Keller's Craft </title>
+</head>
+<body>
+    <main>
+        <div class="pop">
+            <h1 id="nome-produto">Produto</h1>
+            <img id="imagem-produto" src="" alt="">
+            <p id="descricao-produto"></p>
+
+            <!-- Preenchimento das informações -->
+             <script>
+                // Função para capturar os parâmetros
+                function getParametros(info){
+                    const urlParametros = new URLSearchParams(window.location.search);
+                }
+                // Preenche as informações na POP
+                document.getElementById("nome-produto").textContent = getParametros("nomeProd");
+                document.getElementById("imagem-produto").src = getParametros("imagemProd");
+                document.getElementById("descricao-produto").textContent = getParametros("descricaoProd");
+             </script>
+        </div>
+    </main>
+</body>
+</html>
