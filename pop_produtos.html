@@ -11,21 +11,11 @@
 <body>
     <main>
         <div class="pop">
-            <h1 id="nome-produto">Produto</h1>
-            <img id="imagem-produto" src="" alt="">
-            <p id="descricao-produto"></p>
+            <h1 id="nome-produto">Marca Páginas</h1>
+            <img id="imagem-produto" src="img/produto1.png" alt="">
+            <p id="descricao-produto">Este marca-páginas é uma peça única, feita à mão com resina epóxi de alta qualidade, garantindo durabilidade e um acabamento impecável. Seu design elegante e moderno é perfeito para quem aprecia leitura com estilo</p>
 
-            <!-- Preenchimento das informações -->
-             <script>
-                // Função para capturar os parâmetros
-                function getParametros(info){
-                    const urlParametros = new URLSearchParams(window.location.search);
-                }
-                // Preenche as informações na POP
-                document.getElementById("nome-produto").textContent = getParametros("nomeProd");
-                document.getElementById("imagem-produto").src = getParametros("imagemProd");
-                document.getElementById("descricao-produto").textContent = getParametros("descricaoProd");
-             </script>
+
         </div>
     </main>
 </body>
