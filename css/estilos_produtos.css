@@ -20,7 +20,7 @@ body{
 /* Header */
 .logo-header{
     width: 100px;
-    height: 100px;
+    height: 5%;
     padding-left: 5px;
 
 }
@@ -93,16 +93,93 @@ main{
     padding-left: 5%;
 }
 /* ___________________________________________________________________ */
-/* Produtos */
+/* Container dos cards */
+.container{
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin: auto;
 
-.small-container{
+}
+
+.card {
+    background: #fff;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+/* Imagens */
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+
+/* POP */
+.pop{
+    margin: 0;
+}
+.pop img{
+    width: 700;
+    height: 500;
+    padding-left: 7%;
+}
+.pop h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #e9a106;
+}
+.pop p{
+    padding: 2% 0 9% 7%;
+    margin: 0;
+    white-space: pre-line;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slider button{
+    background-color: #f5c263;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}s
+/* .small-container{
     max-width: 1080px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
 }
  .titulo_prod{
-    /* margin: auto; */
+    margin: auto;
     margin: 15px 5px 15px 410px ;
     padding-left: 25px;
     padding-right: 25px;
@@ -130,7 +207,9 @@ main{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
+
+
 
 /*Estilização do Footer*/
 footer{
