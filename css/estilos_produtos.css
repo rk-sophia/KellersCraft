@@ -142,7 +142,6 @@ main{
 .pop img{
     width: 700;
     height: 500;
-    padding-left: 7%;
 }
 .pop h1{
     font-size: 40px;
@@ -171,7 +170,17 @@ main{
     color: white;
     cursor: pointer;
     padding: 8px;
-}s
+}
+.slider-img{
+    width: 700;
+    height: 500;
+}
+
+/*Estilização do Footer*/
+footer{
+    background-color: #4B3123;
+}
+
 /* .small-container{
     max-width: 1080px;
     margin: auto;
@@ -208,11 +217,4 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
 } */
-
-
-
-/*Estilização do Footer*/
-footer{
-    background-color: #4B3123;
-}
 

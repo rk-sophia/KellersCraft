@@ -14,7 +14,7 @@
             // Função para abrir a POP de detalhes do produto
             function abrirDetalhes(nome, imagem, descricao){
                 const url = `pop_produtos.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;
-                window.open(url, '_blank', "width=500,height=500");
+                window.open(url, '_blank', "width=700,height=500");
             }
 
         </script>
@@ -30,8 +30,7 @@
                         <ul>
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="produtos.html">Produtos</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Contato</a></li>
+                            <li><a href="contato.html">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,44 +57,64 @@
 
             <div class="container">
                 <script>
-                    desc_produto="Estes Marca Páginas são personalizáveis e feitos sob encomenda. Entre em contato!"
-                    slider=['img/produtos/produto01.jpeg','img/produtos/produto04.jpeg','img/produtos/produto05.jpeg'];
+                    descMarcaPagina="Estes Marca Páginas são personalizáveis e feitos sob encomenda. Entre em contato!"
+                    sliderMarcaPagina=['img/produto1.png','img/produto1-2.png','img/produto1-3.png'];
                 </script>
-                <div class="card" onclick="abrirDetalhes('Marca Página', 'img/produto1.png', desc_produto)">
+                <div class="card" onclick="abrirDetalhes('Marca Página', sliderMarcaPagina, descMarcaPagina)">
                     <img src="img/produto1.png" alt="produto1">
                     <h2>Marca Páginas</h2>
                     <p>Produto feito de resina</p>
                     <span class="preco">R$35,00</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Marca Página', 'img/produto1.png', desc_produto)">
+                <script>
+                   descDescansoCopo="Estes Marca Páginas são personalizáveis e feitos sob encomenda. Entre em contato!"
+                   sliderDescansoCopo=['img/produto2.png','img/produto2-2.png','img/produto2-3.png'];
+                </script>
+                <div class="card" onclick="abrirDetalhes('Descanso de copo', sliderDescansoCopo, descDescansoCopo)">
                     <img src="img/produto2.png" alt="produto1">
                     <h2>Descanso de copo</h2>
                     <p>Produto feito de resina</p>
                     <span class="preco">R$40,00</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Marca Página', 'img/produto1.png', desc_produto)">
+                <script>
+                    descVela="Estes Marca Páginas são personalizáveis e feitos sob encomenda. Entre em contato!"
+                    sliderVela=['img/produto3.png','img/produto3-2.png','img/produto3-3.png'];
+                </script>
+                <div class="card" onclick="abrirDetalhes('Vela Aromática', sliderVela, descVela)">
                     <img src="img/produto3.png" alt="produto1">
                     <h2>Vela Aromática</h2>
                     <p>Produto feito de resina</p>
                     <span class="preco">R$35,00</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Marca Página', 'img/produto1.png', desc_produto)">
+                <script>
+                    descItemP="Estes Marca Páginas são personalizáveis e feitos sob encomenda. Entre em contato!"
+                    sliderItemP=['img/produto4.png','img/produto4-2.png','img/produto4-3.png'];
+                </script>
+                <div class="card" onclick="abrirDetalhes('Itens personalizados', sliderItemP, descItemP)">
                     <img src="img/produto4.png" alt="produto1">
                     <h2>Itens personalizados</h2>
                     <p>Produto feito de resina</p>
                     <span class="preco">R$50,00</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Marca Página', 'img/produto1.png', desc_produto)">
+                <script>
+                    descChaveiro="Estes Marca Páginas são personalizáveis e feitos sob encomenda. Entre em contato!"
+                    sliderChaveiro=['img/produto5.png','img/produto5-2.png','img/produto5-3.png'];
+                </script>
+                <div class="card" onclick="abrirDetalhes('Chaveiro Personalizado', sliderChaveiro, descChaveiro)">
                     <img src="img/produto5.png" alt="produto1">
-                    <h2>Marca Páginas</h2>
+                    <h2>Chaveiro Personalizado</h2>
                     <p>Produto feito de resina</p>
                     <span class="preco">R$35,00</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Marca Página', 'img/produto1.png', desc_produto)">
+                <script>
+                    descDescansoCopo2="Estes Marca Páginas são personalizáveis e feitos sob encomenda. Entre em contato!"
+                    sliderDescansoCopo2=['img/produto6.png','img/produto6-2.png','img/produto6-3.png'];
+                </script>
+                <div class="card" onclick="abrirDetalhes('Descanso de Copo', sliderDescansoCopo2, descDescansoCopo2)">
                     <img src="img/produto6.png" alt="produto1">
-                    <h2>Marca Páginas</h2>
+                    <h2>Brincos</h2>
                     <p>Produto feito de resina</p>
-                    <span class="preco">R$35,00</span>
+                    <span class="preco">R$15,00</span>
                 </div>
             </div>
            
@@ -105,5 +124,6 @@
         <footer>
             <img src="img/logo-footer.png" alt="Site da Keller's Craft" class="logo">
         </footer>
+
     </body>
 </html>
