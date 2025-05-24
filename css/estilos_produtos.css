@@ -19,8 +19,8 @@ body{
 /* ___________________________________________________________________ */
 /* Header */
 .logo-header{
-    width: 100px;
-    height: 5%;
+    width: 200px;
+    height: auto;
     padding-left: 5px;
 
 }
