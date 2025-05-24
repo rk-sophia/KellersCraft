@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+
+}
+/* ___________________________________________________________________ */
+/* Header */
+.logo-header{
+    width: 200px;
+    height: auto;
+    padding-left: 5px;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: #555;
+}
+nav ul li a:hover{
+    background-color: #4B3123;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.header{
+    background: linear-gradient(to right, #EEC967, #EBB537, #e9a106);
+}
+
+.header row{
+    margin-top: 70px;
+}
+.container_header{
+    max-width: 1300px;
+    margin: auto;
+
+}
+/*Título*/
+.contato-titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: #e9a106;
+    list-style: none;
+}
+.contato-item:before{
+    content: "☎️";
+}
+/* ______________________________________________________________________________ */
+/* Estilização formulário */
+/* main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #4B3123;
+}
+
+main form input{
+    background: #EEC967;
+    width: 300px;
+    height: 25px;
+    padding: 0 0.5rem;
+    margin-top: 0.8rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 0.9rem;
+    border: 1px solid #040B18;
+    border-radius: 5px;
+}
+
+/* Estilo do botão */
+/* main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 32px;
+    background: #e9a106;
+    color: white;
+    font-size: 0.8rem;
+    transition: all .3s ease-in-out;
+}
+main form input[type="submit"]:hover{
+    background: #EEC967;
+}  */
+
+/*Formulário da Luyra*/
+form{
+	margin-top: 20px;
+	margin-left: 20%;
+    margin-bottom: 0;
+}
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+fieldset{
+	width: 75%;
+	padding-left: 5%;
+	margin-bottom: 2%;
+}
+.input-padrao{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 85%;
+}
+.chk{
+	margin: 20px 0;
+}
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+    margin-bottom: 20px;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+.enviar:hover{
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+/*Div do retorno do formulário*/
+.divRetorno{
+    display: none;
+    margin-bottom: 15px;
+}
+.divRetorno p{
+    font-size: 24px;
+}
+
+
+
+/*Estilização do Footer*/
+footer{
+    background-color: #4B3123;
+}

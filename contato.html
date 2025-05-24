@@ -1,25 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body>
-    <div class="header">
-        <div class="navbar">
-            <img src="img/logo-header.png" alt="Site da Keller's Book Nook"  class="logo-header">
-       
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo_contato.css">
+
+        <link rel="icon" href="img/logo.png" type="image/png">
+
+        <title> Keller's Craft </title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="navbar">
+                <img src="img/logo-header.png" alt="Site da Keller's Book Nook"  class="logo-header">
+        
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-</div>
-    
-</body>
+        <main>
+            <!--Título-->
+            <ul class="contato-titulo">
+                <li class="contato-item">Contato</li>
+            </ul>
+            <p>Será uma alegria te atender! <br><br>
+            Você pode nos encontrar no Instagram, no WhatsApp ou preencher o formulário abaixo.</p>
+            <!-- Formulário de contato -->
+            <form id="frmContato" action="">
+                <fieldset>  <!-- delimitador do formulário -->
+                    <legend>Dados Pessoais</legend>
+                    <label for="name">
+                        <span>Nome Completo</span>
+                        <input type="text" id="name" class="input-padrao" placeholder="Digite seu nome aqui..." required>
+                    </label>
+
+                    <label>
+                        <span>E-mail:</span>
+                        <input type="text" id="email" class="input-padrao" placeholder="Digite seu email aqui...">
+                    </label>
+        
+                    <label>
+                        <span>Telefone:</span>
+                        <input type="text" id="telefone" class="input-padrao" placeholder="Exemplo. (11) 40028922">
+                    </label>
+                    
+                    <label>
+                        <span>Mensagem</span>
+                        <textarea cols="70" rows="10" class="input-padrao"></textarea>
+                    </label>
+
+                    <label>
+                        <span>Como prefere o nosso contato?</span>
+                        <input type="radio"value="radio-email" name="contato"> E-mail
+                        <input type="radio" value="radio-telefone"name="contato"> Telefone
+                        <input type="radio" value="radio-whatsapp"name="contato"> WhatsApp
+                    </label>
+
+                    <label>
+                        <span>Qual o motivo do seu contato?</span>
+                        <select>
+                            <option>Selecione</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </label>
+        
+                </fieldset>
+                <label>
+                    <input type="checkbox" class="chk">Gostaria de receber nossas novidades  promoções?
+                </label>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </main>
+        <footer>
+            <img src="img/logo-footer.png" alt="Site da Keller's Craft" class="logo">
+        </footer>
+    </body>
 </html>
