@@ -85,6 +85,8 @@ main{
     font-weight: bold;
     color: #e9a106;
     list-style: none;
+    padding-left: 3%;
+
 }
 .produtos-item:before{
     content: "🦉";

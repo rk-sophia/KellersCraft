@@ -78,9 +78,14 @@ p{
     font-weight: bold;
     color: #e9a106;
     list-style: none;
+    padding-left: 3%;
+
 }
 .contato-item:before{
     content: "☎️";
+}
+.contato-texto{
+    padding-left: 5%;
 }
 /* ______________________________________________________________________________ */
 /* Estilização formulário */

@@ -1,0 +1,1 @@
+document.querySelector(".qtde").textContent * document.querySelector(".unitario").textContent

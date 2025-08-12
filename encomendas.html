@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <link href="css/estilo_encomendas.css" rel="stylesheet">
+
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <title>Encomendas</title>
+</head>
+<body>
+        <div class="header">
+            <div class="navbar">
+                <img src="img/logo-header.png" alt="Site da Keller's Book Nook"  class="logo-header">
+            
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="encomendas.html">Encomendas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--Conteúdo do site-->
+       <main>
+            <!--Título-->
+            <ul class="encomendas-titulo">
+                <li class="encomendas-item">Encomendas</li>
+            </ul>
+            
+            <section class="container">
+                <!-- Tabela das encomendas -->
+                 <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor Unitário</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-clientes">
+                        <tr class="cliente">
+                            <td class="nome">Amanda</td>
+                            <td class="produto">Brincos </td>
+                            <td class="qtde">2</td>
+                            <td class="unitario">15</td>
+                            <td  class="total"></td>
+                        </tr>
+
+                        <tr class="cliente">
+                            <td class="nome">Bruna</td>
+                            <td class="produto">Chaveiro Personalizado</td>
+                            <td class="qtde">5</td>
+                            <td class="unitario">35</td>
+                            <td class="total"></td>
+                        </tr>
+                        
+                        <tr class="cliente">
+                            <td class="nome">Carolina</td>
+                            <td class="produto">Descanso de copo (2 peças)</td>
+                            <td class="qtde">1</td>
+                            <td class="unitario">40</td>
+                            <td class="total"></td>
+                        </tr>
+
+                        <tr class="cliente">
+                            <td class="nome">Danielly</td>
+                            <td class="produto">Item Personalizado (kit 3pcs)</td>
+                            <td class="qtde">1</td>
+                            <td class="unitario">50</td>
+                            <td class="total"></td>
+                        </tr>
+                    </tbody>
+                 </table>
+            </section>
+        </main>
+        <!--Rodapé-->
+        <footer>
+            <img src="img/logo-footer.png" alt="Site da Keller's Craft" class="logo">
+        </footer>
+        <script src="js/encomendas.js"></script>
+
+</body>
+</html>
