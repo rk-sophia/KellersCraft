@@ -98,6 +98,35 @@ th{
 }
 
 /* ___________________________________________________________________ */
+/* Personalizando o Formulário */
+form label{
+    font-size: 20px;
+    margin-left: 2.1%;
+}
+.input-padrao{
+    margin: 0 0 40px;
+    padding: 10px 10px;
+    width: 15%;
+}
+fieldset{
+    border: none;
+    margin-top: 2%;
+}
+.Selects{
+    font-size: 20px;
+    height: 3%;
+}
+button{
+    font-size: 20px;
+    background-color: rgb(red, green, blue);
+    color: white;
+    width: 12%;
+    height: 5%;
+    margin-left: 2.1%;
+    cursor: pointer;
+}
+
+/* ___________________________________________________________________ */
 /* FOOTER */
 footer{
     background-color: #4B3123;
