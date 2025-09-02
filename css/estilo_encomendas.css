@@ -118,12 +118,20 @@ fieldset{
 }
 button{
     font-size: 20px;
-    background-color: rgb(red, green, blue);
+    background-color: #EBB537;
     color: white;
     width: 12%;
-    height: 5%;
+    height: 10%;
     margin-left: 2.1%;
     cursor: pointer;
+    border-radius: 5px;
+}
+.adicionar_encomendas{
+    font-size: 40px;
+    font-weight: bold;
+    color: #e9a106;
+    list-style: none;
+    padding-left: 3%;
 }
 
 /* ___________________________________________________________________ */
