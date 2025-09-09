@@ -32,6 +32,10 @@
             </ul>
             
             <section class="container">
+                <!-- campo de filtragem da tabela -->
+                 <label for="filtrar-tabela">Buscar:</label>
+                 <br>
+                 <input type="text" id="filtrar-tabela" class="filtrar-tabela" placeholder="Digite o cliente que deseja buscar">
                 <!-- Tabela das encomendas -->
                  <table>
                     <thead>
@@ -91,10 +95,10 @@
                 <label>Produto:</label>
                 <select id="produto">
                     <option value="null">Selecione</option>
-                    <option value="Produto 1">Produto 1</option>
-                    <option value="Produto 2">Produto 2</option>
-                    <option value="Produto 3">Produto 3</option>
-                    <option value="Produto 4">Produto 4</option>
+                    <option value="Produto 1">Brincos</option>
+                    <option value="Produto 2">Chaveiro Personalizado</option>
+                    <option value="Produto 3">Descanso de copo (2 peças)</option>
+                    <option value="Produto 4">Item Personalizado (kit 3pcs)</option>
                 </select>
 
                 <br>
@@ -110,6 +114,8 @@
         </footer>
         <script src="js/encomendas.js"></script>
         <script src="js/adiciona_encomenda.js"></script>
+        <script src="js/remover_encomenda.js"></script>
+        <script src="js/buscar_encomenda.js"></script>
 
 </body>
 </html>

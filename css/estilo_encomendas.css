@@ -71,6 +71,12 @@ p{
 
 /* ___________________________________________________________________ */
 /* Conteúdo (main) */
+.container {
+    width: 94%;
+    height: 100%;
+    margin: 0 auto;
+}
+
 /*Texto dos Produtos*/
 .encomendas-titulo{
     font-size: 40px;
@@ -99,32 +105,66 @@ th{
 
 /* ___________________________________________________________________ */
 /* Personalizando o Formulário */
-form label{
-    font-size: 20px;
-    margin-left: 2.1%;
+main form input{
+    background: #EEC967;
+    color: rgba(166, 166, 166);
+    border: 1px solid #040B18;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin: auto;
 }
-.input-padrao{
-    margin: 0 0 40px;
-    padding: 10px 10px;
-    width: 15%;
+form{
+	margin-top: 20px;
+	margin-left: 20%;
+    margin-bottom: 0;
+}
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
 }
 fieldset{
     border: none;
     margin-top: 2%;
+    width: 75%;
+	padding-left: 5%;
+	margin-bottom: 2%;
 }
-.Selects{
+.input-padrao{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 85%;
+}
+
+
+select{
     font-size: 20px;
     height: 3%;
+    width: 20%;
+	padding-left: 5%;
+	margin-bottom: 2%;
+    margin: 20px 0;
 }
 button{
     font-size: 20px;
     background-color: #EBB537;
     color: white;
-    width: 12%;
+    /* width: 12%; */
     height: 10%;
     margin-left: 2.1%;
     cursor: pointer;
     border-radius: 5px;
+    width: 40%;
+	padding: 15px 0;
+    margin-bottom: 20px;
+	/* background: orange; */
+	color: white;
+	font-weight: bold;
+	border: none;
+	/* border-radius: 5px; */
+	transition: 1s all;
+	/* cursor: pointer; */
 }
 .adicionar_encomendas{
     font-size: 40px;
@@ -134,6 +174,24 @@ button{
     padding-left: 3%;
 }
 
+/* Efeito para linha sumir quando excluída */
+
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
+
+/* Campo de busca */
+#filtrar-tabela{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+/*  Esconde a linha para a busca */
+.invisivel{
+    display: none;
+}
 /* ___________________________________________________________________ */
 /* FOOTER */
 footer{

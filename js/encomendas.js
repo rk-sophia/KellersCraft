@@ -55,13 +55,11 @@ for (var count=0; count < clientes.length; count ++){
         clientes[count].style.backgroundColor = "red";
 
         } else {
-            // Calcula e exibe o total
-            clientes[count].querySelector(".total").textContent =
-             calculaTotal(tab_qtde,tab_unitario);
+            //Calcula e exibe o total
+            clientes[count].querySelector(".total").textContent =  calculaTotal(tab_qtde,tab_unitario);
 
-            // Envia formatação para o valor unitário
-            clientes[count].querySelector(".total").
-            textContent = formataValor(parseFloat(tab_unitario));
+            //Envia formatação para o valor unitário
+            clientes[count].querySelector(".unitario").textContent=formataValor(parseFloat(tab_unitario));
             
         }
     
