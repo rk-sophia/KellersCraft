@@ -146,26 +146,25 @@ select{
 	margin-bottom: 2%;
     margin: 20px 0;
 }
-button{
-    font-size: 20px;
-    background-color: #EBB537;
-    color: white;
-    /* width: 12%; */
-    height: 10%;
-    margin-left: 2.1%;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 40%;
+
+.adicionar{
+	width: 40%;
 	padding: 15px 0;
     margin-bottom: 20px;
-	/* background: orange; */
+	background: #EBB537;
 	color: white;
 	font-weight: bold;
 	border: none;
-	/* border-radius: 5px; */
+	border-radius: 5px;
 	transition: 1s all;
-	/* cursor: pointer; */
+	cursor: pointer;
 }
+.adicionar:hover{
+	background: #e9a106;
+	transform: scale(1.2);
+}
+
+
 .adicionar_encomendas{
     font-size: 40px;
     font-weight: bold;
