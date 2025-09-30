@@ -63,15 +63,27 @@ botaoAdicionar.addEventListener("click", function(event){
     // Captura nova encomenda
     var novaEncomenda = obtemEncomenda(form);
 
+    // Adiciona a encomenda
+    adicionaEncomendaTabela(novaEncomenda);
+
     // Captura a tabela de encomendas
-    var tabela = document.querySelector("#tabela-clientes")
+    // var tabela = document.querySelector("#tabela-clientes")
 
     // Insere a nova encomenda na tabela
-    tabela.appendChild(montaTR(novaEncomenda));
+    // tabela.appendChild(montaTR(novaEncomenda));
 
     // Limpa o formulário
     form.reset();
 });
+
+// Função para adicionar nova encomenda na tabela
+function adicionaEncomendaTabela(dadosEncomenda){
+    // Captura a tabela de encomendas
+    var tabela = document.querySelector("#tabela-clientes")
+
+    // Insere a nova encomenda na tabela
+    tabela.appendChild(montaTR(dadosEncomenda));
+} 
 
 // Captura os dados do formulário
 function obtemEncomenda(formulario){
