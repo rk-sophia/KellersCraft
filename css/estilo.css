@@ -85,7 +85,7 @@ p{
 .slides {
     display: flex;
     width: 300%;
-    animation: slide-animation 9s infinite;
+    animation: slide-animation 50s infinite;
 }
 
 .slide {
